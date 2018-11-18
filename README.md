@@ -11,7 +11,11 @@ ProgramData\MySQL\MySQL Server 8.0\my.ini default_authentication_plugin=mysql_na
 mydb - mysql schema
 
 Edit user 'root' to set standard encryption
+https://pusher.com/
+dashboard - key, secret, cluster etc (broadcasting: .env, config-broadcasting, bootstrap.js )
 
 generate:key
 migrate
-serve
+npm install, run dev
+serve\set up apache
+
