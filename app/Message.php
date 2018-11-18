@@ -18,6 +18,12 @@ class Message extends Model
 	 *
 	 * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
 	 */
+	protected $appends = ['selfMessage'];
+
+    public function getSelfMessageAttribute()
+    {
+        return $this->user_id === auth()->user()->id;
+    }
 	public function user()
 	{
 	  return $this->belongsTo(User::class);

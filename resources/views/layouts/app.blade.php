@@ -35,6 +35,9 @@
     margin: 0;
     color: #777777;
   }
+  .self {
+    background-color: #bc8f8f;
+ }
 
   .panel-body {
     overflow-y: scroll;

@@ -2,7 +2,7 @@
     <ul class="chat">
         <li class="left clearfix" v-for="message in messages">
             <div class="chat-body clearfix">
-                <div class="header">
+                <div class="header" :class="{ 'self': message.selfMessage }">
                     <strong class="primary-font">
                         {{ message.user.name }}
                     </strong>
