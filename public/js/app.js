@@ -14025,7 +14025,7 @@ var app = new Vue({
 
     created: function created() {
         this.fetchMessages();
-        this.timer = setInterval(this.fetchMessages(), 1000);
+        this.timer = setInterval(this.fetchMessages(), 5000);
         /*
                 Echo.private('chat')
                     .listen('MessageSent', (e) => {

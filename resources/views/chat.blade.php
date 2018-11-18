@@ -8,8 +8,12 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Chats</div>
 
-                <div class="panel-body">
-                    <chat-messages :messages="messages"></chat-messages>
+                <div class="panel-body">                  
+
+                    <chat-messages :messages="messages" >
+                        <li v-for="message in messages" :class="{ 'self': message.selfMessage }">                        
+                        </li>
+                    </chat-messages>
                 </div>
                 <div class="panel-footer">
                     <chat-form
